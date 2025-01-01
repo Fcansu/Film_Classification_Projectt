@@ -1,6 +1,11 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("🎈 Film İçerik Tahmini")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "İzleyeceğiniz filmin 18 yaş üstüne uygun olup olmadığına birlikte bakalım!"
 )
+st.title("Youtube URL")
+film_adi = st.text_input("Film Adı")
+url = st.text_input("Video URL'si:")
+st.button ("Giriş")
+st.video(url)
